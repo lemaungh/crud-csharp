@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\bin\Debug\CRUD_Student.exe.config
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\bin\Debug\CRUD_Student.exe
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\bin\Debug\CRUD_Student.pdb
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\obj\Debug\CRUD_Student.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\obj\Debug\CRUD_Student.frmMain.resources
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\obj\Debug\CRUD_Student.frmDangNhap.resources
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\obj\Debug\CRUD_Student.Properties.Resources.resources
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\obj\Debug\CRUD_Student.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\obj\Debug\CRUD_Student.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\obj\Debug\CRUD_Student.exe
+C:\Users\Admin\source\repos\CRUD_Student\CRUD_Student\obj\Debug\CRUD_Student.pdb

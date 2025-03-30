@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsDangNhap.cs" />
+    <Compile Include="DataProvider.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>

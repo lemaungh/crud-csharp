@@ -30,8 +30,8 @@
         {
             this.lblTaiKhoan = new System.Windows.Forms.Label();
             this.lblMatKhau = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDangNhap = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -56,19 +56,20 @@
             this.lblMatKhau.TabIndex = 1;
             this.lblMatKhau.Text = "Mật khẩu";
             // 
-            // textBox1
+            // txtDangNhap
             // 
-            this.textBox1.Location = new System.Drawing.Point(279, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtDangNhap.Location = new System.Drawing.Point(279, 63);
+            this.txtDangNhap.Name = "txtDangNhap";
+            this.txtDangNhap.Size = new System.Drawing.Size(215, 20);
+            this.txtDangNhap.TabIndex = 2;
             // 
-            // textBox2
+            // txtMatKhau
             // 
-            this.textBox2.Location = new System.Drawing.Point(279, 115);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtMatKhau.Location = new System.Drawing.Point(279, 115);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Size = new System.Drawing.Size(215, 20);
+            this.txtMatKhau.TabIndex = 3;
+            this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // btnDangNhap
             // 
@@ -78,6 +79,7 @@
             this.btnDangNhap.TabIndex = 4;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnThoat
             // 
@@ -87,6 +89,7 @@
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmDangNhap
             // 
@@ -96,8 +99,8 @@
             this.ClientSize = new System.Drawing.Size(636, 256);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMatKhau);
+            this.Controls.Add(this.txtDangNhap);
             this.Controls.Add(this.lblMatKhau);
             this.Controls.Add(this.lblTaiKhoan);
             this.Name = "frmDangNhap";
@@ -113,8 +116,8 @@
 
         private System.Windows.Forms.Label lblTaiKhoan;
         private System.Windows.Forms.Label lblMatKhau;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDangNhap;
+        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnThoat;
     }

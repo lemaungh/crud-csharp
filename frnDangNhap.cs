@@ -19,7 +19,36 @@ namespace CRUD_Student
 
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
+            DataProvider.getAllUser();
+        }
 
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            string tenDangNhap = txtDangNhap.Text;
+            string matKhau = txtMatKhau.Text;
+            bool isFound = false;
+
+            foreach (var dangNhap in DataProvider.listDangNhap)
+            {
+                if (dangNhap.tenDangNhap == tenDangNhap && dangNhap.matKhau == matKhau)
+                {
+                    isFound = true; break;
+                }
+            }
+            if (isFound == true) 
+             { 
+                  frmMain f = new frmMain(); 
+                  f.ShowDialog();
+             }
+             else
+             {
+                   MessageBox.Show("Sai tai khoan hoac mat khau");
+             }
         }
     }
 }

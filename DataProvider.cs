@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,27 @@ namespace CRUD_Student
             { 
                 CloseConnection(); 
             }
+
+        }
+        public static DataTable loadData(string query)
+        {
+            DataTable dt = new DataTable();
+            try 
+            {
+                OpenConnection();
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dt);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+            return dt;
 
         }
     }

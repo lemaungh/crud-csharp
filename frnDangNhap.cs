@@ -41,7 +41,8 @@ namespace CRUD_Student
                 }
             }
             if (isFound == true) 
-             { 
+             {      
+                //this.Hide();
                   frmMain f = new frmMain(); 
                   f.ShowDialog();
              }

@@ -171,12 +171,20 @@
             this.btnHienThi.TabIndex = 13;
             this.btnHienThi.Text = "Hiển thị tất cả";
             this.btnHienThi.UseVisualStyleBackColor = false;
+            this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
             // 
             // dtgvMonHoc
             // 
+            this.dtgvMonHoc.AllowUserToAddRows = false;
+            this.dtgvMonHoc.AllowUserToDeleteRows = false;
+            this.dtgvMonHoc.AllowUserToResizeColumns = false;
+            this.dtgvMonHoc.AllowUserToResizeRows = false;
+            this.dtgvMonHoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvMonHoc.Location = new System.Drawing.Point(73, 247);
             this.dtgvMonHoc.Name = "dtgvMonHoc";
+            this.dtgvMonHoc.ReadOnly = true;
+            this.dtgvMonHoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvMonHoc.Size = new System.Drawing.Size(1115, 220);
             this.dtgvMonHoc.TabIndex = 14;
             this.dtgvMonHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);

@@ -11,7 +11,8 @@ using System.Windows.Forms;
 namespace CRUD_Student
 {
     public partial class frmMain: Form
-    {
+    {   
+        DataTable dataTable = new DataTable();
         public frmMain()
         {
             InitializeComponent();
@@ -25,6 +26,14 @@ namespace CRUD_Student
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnHienThi_Click(object sender, EventArgs e)
+        {
+            string query = "select * from tblSubject";
+            dataTable.Clear();
+            dataTable = DataProvider.loadData(query);
+            dtgvMonHoc.DataSource = dataTable;
         }
     }
 }
